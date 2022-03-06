@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let n = 0;
+    let arr = [];
+
+
+    while (n != -1) {
+            n = prompt("Nhập vào 1 kí tự để thêm vào mảng, nhập -1 để dừng:")
+            let i = n;
+            if (i != -1) {
+                arr.push(i)
+            } else break;
+    }
+
+    document.write(`Mảng có ${arr.length} ký tự là: [ ${arr} ]`);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    n = prompt("Nhập vào 1 mảng kí tự, không cần cách bởi dấu phẩy:")
+    nArr = n.split("")
+
+    for (let i = 0; i < nArr.length; i++) {
+        if (nArr[i] == "-") {
+            nArr[i] = "_"
+        }
+    }
+
+    document.write(`Mảng sau khi thay đổi: [ ${nArr} ]`)
+
+</script>
+
+</body>
+</html>

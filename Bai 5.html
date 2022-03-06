@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let a = prompt("Nhập vào chuỗi thứ nhất:")
+    let b = prompt("Nhập vào chuỗi thứ hai:")
+    let aArr = a.split("")
+    let bArr = b.split("")
+
+
+    if (aArr.length != bArr.length) {
+        document.write("Hai chuỗi không giống nhau")
+    } else {
+        let flag = false;
+        for (let i = 0; i < aArr.length; i++) {
+            if (aArr[i] != bArr[i]) {
+                flag = true;
+            }
+        }
+        if (flag) {
+            document.write("Hai chuỗi không giống nhau")
+        } else {
+            document.write("Hai chuỗi giống nhau")
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
